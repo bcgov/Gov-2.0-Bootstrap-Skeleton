@@ -10,6 +10,6 @@ The use of the Gov-2.0-drupal theme must receive approval by the Joint Working G
 If Government Communications & Publc Engagement updates the design of the corporate tool set of gov.bc.ca web properties, any application built upon the Gov-2.0-Boostrap-Skeleton is mandated to update to the new look and feel.  The new design, standards and requirements will be posted within the gov.bc.ca [Developer's Guide](http://www2.gov.bc.ca/gov/content/about-gov-bc-ca/web-presence/developers-guide).
 
 ## Theme Contents
-1. 1-Column Template
-2. 2-Column Template
-3. 3-Column Template
+1. One-Column Template
+2. Two-Column Template
+3. Three-Column Template
