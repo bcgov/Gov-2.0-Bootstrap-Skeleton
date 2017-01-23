@@ -82,22 +82,22 @@
 
 <body>
     <!-- HEADER -->
-    <div id="header">
+    <div id="header" role="banner">
         <div id="header-main" class="navbar navbar-default navbar-fixed-top">
             <div class="container">
                 <div id="header-main-row" class="row">
                     <!-- GOV & ENV TITLE -->
                     <div class="col-sm-3 col-md-2 col-lg-2 header-main-left">
                         <div id="logo">
-                            <a href="http://gov.bc.ca"><img src="images/gov3_bc_logo.png" alt="Government of B.C." title="Government of B.C." /></a>
+                            <a href="http://gov.bc.ca"><img src="images/gov3_bc_logo.png" alt="Government of B.C." title="Government of B.C. logo" /></a>
                         </div>
                         <div id="access">
                             <ul>
                                 <li aria-label="Keyboard Tab Skip">
-                                    <a accesskey="1" href="#main-content-anchor" aria-label="Skip to main content">Skip to main content</a>
+                                    <a accesskey="0" href="#main-content-anchor" aria-label="Skip to main content">Skip to main content</a>
                                 </li>
                                 <li aria-label="Keyboard Tab Skip">
-                                    <a accesskey="n" href="#main-content-anchor" onclick="$('.menu-button').focus();" aria-label="Skip to navigation">Skip to navigation</a>
+                                    <a accesskey="0" href="#navigation-anchor" aria-label="Skip to navigation" aria-label="Skip to navigation">Skip to navigation</a>
                                 </li>
                                 <li aria-label="Keyboard Tab Skip">
                                     <a accesskey="0" href="http://gov.bc.ca/webaccessibility/" aria-label="Accessibility Statement">Accessibility Statement</a>
@@ -116,8 +116,8 @@
                     <!-- /GOV & ENV TITLE -->
 
                     <!-- COLLAPSING NAVBAR -->
-                    <div id="navbar" class="collapse navbar-collapse">
-
+                    <div id="navbar" class="collapse navbar-collapse" role="navigation">
+<a id="navigation-anchor"></a>
                         <ul class="nav navbar-nav">
                             <li><a href="#">Navigation Link 1</a></li>
                             <li><a href="#">Navigation Link 2</a></li>
@@ -162,14 +162,15 @@
                 </li>
             </ol>
         </div>
-        <a id="main-content-anchor"></a>
+        
         <!-- PAGE CONTENT -->
         <div class="row">
 
 
 
-            <div id="main-content" class="contentPageMainColumn col-sm-12">
-                <h1>1-Column Layout</h1>
+            <div id="main-content" role="main" class="contentPageMainColumn col-sm-12">
+                <a id="main-content-anchor"></a>
+                <h1>Heading Style 1-Column Layout</h1>
 
 
 
@@ -178,7 +179,7 @@
                 </div>
 
                 <div id="body">
-                    <h2>Heading Two</h2>
+                    <h2>Heading Style 2</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
                     <p>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."</p>
@@ -208,7 +209,7 @@
     </div>
 
     <!-- FOOTER -->
-    <div id="footer">
+    <div id="footer" role="contentinfo">
         <img class="back-to-top" src="images/back-to-top.png" alt="Back to top" title="Back to top" style="display: inline;">
         <div id="footerWrapper">
             <div id="footerAdminSection">
