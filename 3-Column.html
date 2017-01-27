@@ -74,47 +74,44 @@
 </head>
 
 <body>
-    <!-- Header -->
-    <div id="header">
+
+    <!-- HEADER -->
+    <div id="header" role="banner">
         <div id="header-main" class="navbar navbar-default navbar-fixed-top">
             <div class="container">
                 <div id="header-main-row" class="row">
                     <!-- GOV & ENV TITLE -->
                     <div class="col-sm-3 col-md-2 col-lg-2 header-main-left">
                         <div id="logo">
-                            <a href="http://gov.bc.ca"><img src="images/gov3_bc_logo.png" alt="Government of B.C." title="Government of B.C." /></a>
+                            <a href="http://gov.bc.ca"><img src="images/gov3_bc_logo.png" alt="Government of B.C." title="Government of B.C. logo" /></a>
                         </div>
-                         <div id="access">
+                        <div id="access">
                             <ul>
                                 <li aria-label="Keyboard Tab Skip">
-                                    <a accesskey="1" href="#main-content-anchor" aria-label="Skip to main content">Skip to main content</a>
+                                    <a accesskey="0" href="#main-content-anchor" aria-label="Skip to main content">Skip to main content</a>
                                 </li>
                                 <li aria-label="Keyboard Tab Skip">
-                                    <a accesskey="n" href="#main-content-anchor" onclick="$('.menu-button').focus();" aria-label="Skip to navigation">Skip to navigation</a>
+                                    <a accesskey="0" href="#navigation-anchor" aria-label="Skip to navigation" aria-label="Skip to navigation">Skip to navigation</a>
                                 </li>
                                 <li aria-label="Keyboard Tab Skip">
                                     <a accesskey="0" href="http://gov.bc.ca/webaccessibility/" aria-label="Accessibility Statement">Accessibility Statement</a>
                                 </li>
                             </ul>
                         </div>
-                        <button type="button" class="navbar-toggle env-button-custom collapsed" data-toggle="collapse" data-target="#navbar"  aria-expanded="true" aria-label="Burger Navigation">
+                        <button type="button" class="navbar-toggle env-button-custom collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-label="Burger Navigation">
                             <img src="images/menu-open-mobile.png" />
                         </button>
                     </div>
                     <div class="col-sm-8 col-md-8 col-lg-6 hidden-xs">
                         <div class="bcgov-title">
-<<<<<<< HEAD:ENV-3Column.html
                             <h1>Gov 2.0 Bootstrap Skeleton</h1>
-=======
-                            <h1>Gov-2.0-Bootstrap-Skeleton</h1>
->>>>>>> origin/master:3-Column.html
                         </div>
                     </div>
                     <!-- /GOV & ENV TITLE -->
 
                     <!-- COLLAPSING NAVBAR -->
-                    <div id="navbar" class="collapse navbar-collapse">
-
+                    <div id="navbar" class="collapse navbar-collapse" role="navigation" aria-label="primary">
+<a id="navigation-anchor"></a>
                         <ul class="nav navbar-nav">
                             <li><a href="#">Navigation Link 1</a></li>
                             <li><a href="#">Navigation Link 2</a></li>
@@ -139,7 +136,7 @@
             </div>
         </div>
     </div>
-    <!-- /Header -->
+    <!-- /HEADER -->
     <!-- BODY CONTENT -->
     <div id="topicTemplate" class="template container env-container">
         <div id="breadcrumbContainer">
@@ -159,14 +156,14 @@
                 </li>
             </ol>
         </div>
-        <a id="main-content-anchor"></a>
+        
         <!-- PAGE CONTENT -->
         <div class="row">
 
 
             <!-- googleoff:all -->
             <div class="contentPageLeftNavigation col-sm-3 col-md-3">
-                <div id="topicLeftNav" class="navbar">
+                <div id="topicLeftNav" class="navbar" role="navigation" aria-label="secondary">
                     <div class="navbar-header">
                         <button class="navbar-toggle topic-menu-trigger " aria-expanded="true" type="button" data-toggle="collapse" data-target="#topicLeftNav .navbar-collapse">
                             Section Navigation
@@ -256,8 +253,9 @@
                 </div>
             </div>
             <!-- googleon:all -->
-            <div id="main-content" class="contentPageMainColumn col-sm-9 col-md-5 col-lg-6">
-                <h1>3-Column Layout</h1>
+            <a id="main-content-anchor"></a>
+            <div id="main-content" role="main" class="contentPageMainColumn col-sm-9 col-md-5 col-lg-6">
+                <h1>Heading One - 3-Column Layout</h1>
 
                 
 
@@ -269,9 +267,9 @@
                 </div>
 
                 <div id="body">
-                   <h4>
-<strong>Get the low down</strong>
-</h4>
+                   
+<h2>Heading Two - Get the low down</h2>
+
                    
                     <ul>
                         
@@ -293,7 +291,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="contentPageRightColumn col-sm-9 col-md-4 col-lg-3 col-sm-offset-3 col-md-offset-0">
+            <div id="rightcolumn" role="complementary" class="contentPageRightColumn col-sm-9 col-md-4 col-lg-3 col-sm-offset-3 col-md-offset-0">
                 <div id="" data-order="0">
                     <h2 class="blue-heading-bar">Feedback</h2>
                     <div class="promoBox rightColumnBox">
@@ -317,7 +315,7 @@
     </div>
 
     <!-- FOOTER -->
-    <div id="footer">
+    <div id="footer" role"contentinfo">
         <img class="back-to-top" src="images/back-to-top.png" alt="Back to top" title="Back to top" style="display: inline;">
         <div id="footerWrapper">
             <div id="footerAdminSection">

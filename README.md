@@ -13,3 +13,6 @@ If Government Communications & Publc Engagement updates the design of the corpor
 1. One-Column Template
 2. Two-Column Template
 3. Three-Column Template
+
+## Accessibility
+WCAG 2.0 accessibility requirements will be included in this site. Note it is up to the developer and owner of the site to produce an accessible web product and therefore, user testing should be conducted to verify compliance and usability.
