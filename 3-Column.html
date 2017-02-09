@@ -7,9 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="HandheldFriendly" content="true" />
-    <meta name="description" content=""/>
     <meta name="author" content=""/>
-     <meta name="navigaton_title" content=""/>
+    <meta name="navigaton_title" content=""/>
     <meta name="dcterms.publisher" content="Province of British Columbia"/>
     <meta name="dcterms.created" content="2015-06-05"/>
     <meta name="dcterms.modified" content="2016-12-30"/>
@@ -17,8 +16,6 @@
     <meta name="security_classification" content="Low"/>
     <meta name="dcterms.subject" content=""/>
     <meta name="dcterms.subject" content=""/>
-    <meta name="mbcterms.subjectCategory" content=""/>
-    <meta name="mbcterms.subjectCategory" content=""/>
     <meta name="dcterms.creator" content=""/>
     <meta name="dcsext.creator" content=""/>
     <meta name="dcterms.language" content="eng"/>
@@ -43,11 +40,9 @@
     <meta name="msapplication-TileImage" content="icons/ms-icon-144x144.png"/>
     <meta name="theme-color" content="#ffffff"/>
 
-<<<<<<< HEAD:ENV-3Column.html
+
     <title>Gov 2.0 Bootstrap Skeleton - Province of British Columbia</title>
-=======
-    <title>GOV 2.0 Bootstrap Skeleton Template</title>
->>>>>>> origin/master:3-Column.html
+
 
         <!-- BOOTSTRAP CORE CSS v3.3.6 -->
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
@@ -107,28 +102,32 @@
                             <h1>Gov 2.0 Bootstrap Skeleton</h1>
                         </div>
                     </div>
-                    <!-- /GOV & ENV TITLE -->
+                    
 
                     <!-- COLLAPSING NAVBAR -->
                     <div id="navbar" class="collapse navbar-collapse" role="navigation" aria-label="primary">
-<a id="navigation-anchor"></a>
-                        <ul class="nav navbar-nav">
-                            <li><a href="#">Navigation Link 1</a></li>
-                            <li><a href="#">Navigation Link 2</a></li>
-                            <li><a href="#">Navigation Link 3</a></li>
-                            <li><a href="#">Navigation Link 4</a></li>
-                        </ul>
+
                     </div>
-                    <!-- /COLLAPSING NAVBAR -->
+                    
                 </div>
             </div>
             <div class="navigationRibbon">
                 <div class="level2Navigation">
                     <div class="container">
-                        <a href="#">Navigation Link 1</a>
-                        <a href="#">Navigation Link 2</a>
-                        <a href="#">Navigation Link 3</a>
-                        <a href="#">Navigation Link 4</a>
+                        <a href="#">Top Level Navigation Link 1</a>
+                        <a href="#">Top Level Navigation Link 2</a>
+                        <a href="#">Top Level Navigation Link 3</a>
+                        <a href="#">Top Level Navigation Link 4</a>
+
+
+                    </div>
+                </div>
+                <div class="level3Navigation">
+                    <div class="container">
+                        <a href="#">Second Level Navigation Link 1</a>
+                        <a href="#">Second Level Navigation Link 2</a>
+                        <a href="#">Second Level Navigation Link 3</a>
+                        <a href="#">Second Level Navigation Link 4</a>
 
 
                     </div>
@@ -136,6 +135,12 @@
             </div>
         </div>
     </div>
+    <script>
+    // if there is no level 3 navigation, do not display the blue arrow for the current level 2 nav item
+    if($(".level3Navigation a").length == 0) {
+        $(".level2Navigation a.current").css("background-image", "none");
+    }
+</script>
     <!-- /HEADER -->
     <!-- BODY CONTENT -->
     <div id="topicTemplate" class="template container env-container">
@@ -146,22 +151,21 @@
                     <a href="#">Home</a>
                 </li>
                 <li>
-                    <a href="#">Breadcrumb Link</a>
+                    <a href="#">Breadcrumb Link Top Level</a>
                 </li>
                 <li>
-                    <a href="#">Breadcrumb Link</a>
+                    <a href="#">Breadcrumb Link Second Level</a>
                 </li>
                 <li>
-                    <a href="#">Breadcrumb Link</a>
+                    <a href="#">Breadcrumb Link Third Level</a>
                 </li>
             </ol>
         </div>
         
-        <!-- PAGE CONTENT -->
+        <!-- SITE SECONDARY NAVIGATION -->
         <div class="row">
-
-
             <!-- googleoff:all -->
+            <a id="navigation-anchor"></a>
             <div class="contentPageLeftNavigation col-sm-3 col-md-3">
                 <div id="topicLeftNav" class="navbar" role="navigation" aria-label="secondary">
                     <div class="navbar-header">
@@ -174,76 +178,51 @@
                             <ul class="leftNav nav navbar-nav">
                                 <li class="closed">
                                     <div class="leftNav-item-wrapper">
-                                        <a href="#">Top Level - First Page</a>
+                                        <a href="#">Top Level - Navigation Link 1</a>
                                         <span class="level-trigger"></span>
                                     </div>
                                 </li>
                                 <li class="closed">
                                     <div class="leftNav-item-wrapper">
-                                        <a href="#">Top Level - Second Page</a>
+                                        <a href="#">Top Level - Navigation Link 2</a>
                                         <span class="level-trigger"></span>
                                     </div>
                                 </li>
                                 <li class="open current">
                                     <div class="leftNav-item-wrapper">
-                                        <a href="#">Top Level - Third Page</a>
+                                        <a href="#">Top Level - Navigation Link 3</a>
                                         <span class="level-trigger"></span>
                                     </div>
                                     <ul>
                                         <li>
                                             <div class="leftNav-item-wrapper">
-                                                <a href="#">Sub-Page</a>
+                                                <a href="#">Second Level 1</a>
                                                 <span class="level-trigger"></span>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="leftNav-item-wrapper">
-                                                <a href="#">Another Sub-Page</a>
+                                                <a href="#">Second Level 2</a>
                                                 <span class="level-trigger"></span>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="leftNav-item-wrapper">
-                                                <a href="#">And another Sub-Page</a>
+                                                <a href="#">Second Level 3</a>
                                                 <span class="level-trigger"></span>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="leftNav-item-wrapper">
-                                                <a href="#">Surprise, another Sub-Page</a>
+                                                <a href="#">Second Level 4</a>
                                                 <span class="level-trigger"></span>
                                             </div>
                                         </li>
-                                        <li>
-                                            <div class="leftNav-item-wrapper">
-                                                <a href="#">Sub-Page</a>
-                                                <span class="level-trigger"></span>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="leftNav-item-wrapper">
-                                                <a href="#">Sub</a>
-                                                <span class="level-trigger"></span>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="leftNav-item-wrapper">
-                                                <a href="#">Page</a>
-                                                <span class="level-trigger"></span>
-                                            </div>
-                                        </li>
-                                       
-                                    </ul>
+                                     </ul>
                                 </li>
                                 <li class="closed">
                                     <div class="leftNav-item-wrapper">
-                                        <a href="#">Top Level - Fourth Page</a>
-                                        <span class="level-trigger"></span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="leftNav-item-wrapper">
-                                        <a href="#">Top Level - Fifth Page</a>
+                                        <a href="#">Top Level - Navigation Link 4</a>
                                         <span class="level-trigger"></span>
                                     </div>
                                 </li>
@@ -255,7 +234,7 @@
             <!-- googleon:all -->
             <a id="main-content-anchor"></a>
             <div id="main-content" role="main" class="contentPageMainColumn col-sm-9 col-md-5 col-lg-6">
-                <h1>Heading One - 3-Column Layout</h1>
+                <h1>Heading Style 1 Three Column Layout</h1>
 
                 
 
@@ -268,25 +247,25 @@
 
                 <div id="body">
                    
-<h2>Heading Two - Get the low down</h2>
+<h2>Heading Style 2 - Get the low down</h2>
 
                    
                     <ul>
                         
-	<li><a href="/gov/content/safety/emergency-preparedness-response-recovery/preparedbc/emergency-mommy/meet-emergency-mommy" target="_self">Meet Emergency Mommy</a></li>
-	<li><a href="/gov/content/safety/emergency-preparedness-response-recovery/preparedbc/emergency-mommy/make-shakeout-a-family-affair" target="_self">Make ShakeOut a Family Affair</a></li>
-	<li><a href="/gov/content/safety/emergency-preparedness-response-recovery/preparedbc/emergency-mommy/writing-a-disaster-love-letter" target="_self">Writing a Disaster Love Letter</a></li>
-	<li><a href="/gov/content/safety/emergency-preparedness-response-recovery/preparedbc/emergency-mommy/talking-to-your-kids-about-disasters" target="_self">Talking to Your Kids About Disasters</a></li>
-	<li><a href="/gov/content/safety/emergency-preparedness-response-recovery/preparedbc/emergency-mommy/preparing-on-a-budget" target="_self">Preparing on a Budget</a></li>
-	<li><a href="/gov/content/safety/emergency-preparedness-response-recovery/preparedbc/emergency-mommy/avoid-humiliation-get-storm-ready" target="_self">Avoid Humiliation, Get Storm Ready</a></li>
-	<li><a href="/gov/content/safety/emergency-preparedness-response-recovery/preparedbc/emergency-mommy/earthquake-preparedness-part-one" target="_self">Earthquake Preparedness: Part One</a></li>
-	<li><a href="/gov/content/safety/emergency-preparedness-response-recovery/preparedbc/emergency-mommy/earthquake-preparedness-part-two" target="_self">Earthquake Preparedness: Part Two</a></li>
-	<li><a href="/gov/content/safety/emergency-preparedness-response-recovery/preparedbc/emergency-mommy/earthquake-preparedness-part-three" target="_self">Earthquake Preparedness: Part Three</a></li>
-	<li><a href="/gov/content/safety/emergency-preparedness-response-recovery/preparedbc/emergency-mommy/disaster-dining" target="_self">Disaster Dining </a></li>
-	<li><a href="/gov/content/safety/emergency-preparedness-response-recovery/preparedbc/emergency-mommy/ready-for-camping-ready-for-emergencies" target="_self">Ready for Camping, Ready for Emergencies</a></li>
-	<li><a href="/gov/content/safety/emergency-preparedness-response-recovery/preparedbc/emergency-mommy/give-the-gift-of-preparedness" target="_self">Give the Gift of Preparedness</a></li>
-	<li><a href="/gov/content/safety/emergency-preparedness-response-recovery/preparedbc/emergency-mommy/campfire-safety" target="_self">Campfire Safety</a></li>
-	<li><a href="/gov/content/safety/emergency-preparedness-response-recovery/preparedbc/emergency-mommy/travel-safe" target="_self">Travel Safe: Road Trippin' Emergency Mommy Style</a></li>
+	<li><a href="#" target="_self">Meet Emergency Mommy</a></li>
+	<li><a href="#" target="_self">Make ShakeOut a Family Affair</a></li>
+	<li><a href="#" target="_self">Writing a Disaster Love Letter</a></li>
+	<li><a href="#" target="_self">Talking to Your Kids About Disasters</a></li>
+	<li><a href="#" target="_self">Preparing on a Budget</a></li>
+	<li><a href="#" target="_self">Avoid Humiliation, Get Storm Ready</a></li>
+	<li><a href="#" target="_self">Earthquake Preparedness: Part One</a></li>
+	<li><a href="#" target="_self">Earthquake Preparedness: Part Two</a></li>
+	<li><a href="#" target="_self">Earthquake Preparedness: Part Three</a></li>
+	<li><a href="#" target="_self">Disaster Dining </a></li>
+	<li><a href="#" target="_self">Ready for Camping, Ready for Emergencies</a></li>
+	<li><a href="#" target="_self">Give the Gift of Preparedness</a></li>
+	<li><a href="#" target="_self">Campfire Safety</a></li>
+	<li><a href="#" target="_self">Travel Safe: Road Trippin' Emergency Mommy Style</a></li>
 
                     </ul>
                 </div>
@@ -295,13 +274,13 @@
                 <div id="" data-order="0">
                     <h2 class="blue-heading-bar">Feedback</h2>
                     <div class="promoBox rightColumnBox">
-                        <p>See an error or have a suggestion?&nbsp;<a href="#" target="_self">Let us know.</a></p>
+                        <p>See an error or have a suggestion? <a href="#" target="_self">Let us know.</a></p>
                     </div>
                 </div>
                 <div id="replicantData_2772894CCA6C4F18956E8F90AB8A7289" data-order="0">
                     <h2 class="blue-heading-bar">Social Media</h2>
                     <div class="promoBox rightColumnBox">
-                        <p>For more information about social media writing, get in touch with the <a href="#" target="_self">GCPE Environment Communications</a>.</p>
+                        <p>For more information about social media writing, get in touch with the <a href="#" target="_self">GCPE Communications</a>.</p>
                     </div>
                 </div>
             </div>
