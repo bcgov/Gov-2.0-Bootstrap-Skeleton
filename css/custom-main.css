@@ -654,6 +654,7 @@ label {
     margin-top: -55px;
 }
 
+/* Resize page title so it doesn't overlap search bar */
 @media (max-width: 991px) and (min-width: 768px) {
     #header .bcgov-title {
         margin-top: 15px;
