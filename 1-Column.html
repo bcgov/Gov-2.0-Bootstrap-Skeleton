@@ -73,7 +73,7 @@
     <div id="header" role="banner">
         <div id="header-main" class="navbar navbar-default navbar-fixed-top">
             <div class="container">
-                <div id="header-main-row" class="row">
+                <div id="header-main-row1" class="row">
                     <!-- GOV TITLE -->
                     <div class="col-sm-3 col-md-2 col-lg-2 header-main-left">
                         <div id="logo">
@@ -92,16 +92,44 @@
                                 </li>
                             </ul>
                         </div>
-                        <button type="button" class="navbar-toggle gov-button-custom collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-label="Burger Navigation">
+                        <button type="button" class="navbar-toggle gov-button-custom mini-menu-trigger collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-label="Burger Navigation">
                             <img src="images/menu-open-mobile.png" />
                         </button>
+                        <button data-target=".header-search.collapse" data-toggle="collapse" class="search-button navbar-toggle mini-menu-trigger" type="button" aria-expanded="true" aria-label="Search"></button>
                     </div>
-                    <div class="col-sm-8 col-md-8 col-lg-6 hidden-xs">
+                    <div class="col-sm-9 col-md-10 col-lg-10 hidden-xs">
                         <div class="bcgov-title">
                             <h1>Gov 2.0 Bootstrap Skeleton</h1>
                         </div>
+                        <!-- Inline Search box -->
+                        <div class="header-search-inline">
+                            <div class="search">
+                                <form role="form" class="" method="get" action="http://www2.gov.bc.ca/gov/search" id="form-global-search-header">
+                                    <label class="sr-only" for="global-search">Search</label>
+                                    <input type="hidden" value="2E4C7D6BCAA4470AAAD2DCADF662E6A0" name="id">
+                                    <input type="text" autocomplete="off" value="" name="q" placeholder="Search all of gov.bc.ca" class="searchbox" id="global-search"> 
+                                    <div class="search-trigger"> </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- /Inline Search box -->
                     </div>
                     <!-- /GOV & ENV TITLE -->
+
+                    <!-- COLLAPSED SEARCH -->
+                    <div class="header-search collapse">
+                        <div class="header-main-right">
+                            <div class="search">
+                            <form role="form" class="" method="get" action="http://www2.gov.bc.ca/gov/search" id="form-global-search-header">
+                                <label class="sr-only" for="global-search">Search</label>
+                                <input type="hidden" value="2E4C7D6BCAA4470AAAD2DCADF662E6A0" name="id">
+                                <input type="text" autocomplete="off" value="" name="q" placeholder="Search all of gov.bc.ca" class="searchbox" id="global-search"> 
+                                <div class="search-trigger"> </div>
+                            </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /COLLAPSED SEARCH -->
 
                     <!-- COLLAPSING NAVBAR -->
                     <div id="navbar" class="collapse navbar-collapse" role="navigation">
