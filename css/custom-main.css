@@ -653,3 +653,14 @@ label {
     margin-right: -15px;
     margin-top: -55px;
 }
+
+@media (max-width: 991px) and (min-width: 768px) {
+    #header .bcgov-title {
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+    #header .bcgov-title h1 {
+        font-size: 25px;
+        margin-left: 0;
+    }
+}
