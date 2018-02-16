@@ -2,7 +2,7 @@
 An HTML5/CSS3/Bootstrap skeleton to accompany the gov.bc.ca. Developer's Guide.
 
 ## Governance & Approvals   
-All web properties that are created using the Province of B.C. brand/identity must have [received approval](http://www2.gov.bc.ca/gov/content?id=28CC2BEFA54745EA8927F48F196FA38C) by Government Communications & Public Engagement Headquarters through the Joint Working Group, the official governing body of web properties for the Province.  If the web property is public facing, it is strongly recommended that this approval is saught before development begins as the project may experience delays, and potential shutdown.  
+All web properties that are created using the Province of B.C. brand/identity must have [received approval](http://www2.gov.bc.ca/gov/content?id=28CC2BEFA54745EA8927F48F196FA38C) by Government Communications & Public Engagement Headquarters through the Joint Working Group, the official governing body of web properties for the Province.  If the web property is public facing, it is strongly recommended that this approval is sought before development begins as the project may experience delays, and potential shutdown.  
 
 An example of a successful exemption request would be an application that requires the authentication of a user to gain access to personally identifiable information.  The corproate content management framework currenlty consists of CMS Lite, Enhanced Search, Geo Mapping Interfaces, Data Visualization tools and WordPress for citizen engagements and arm's length entities.  Once a web property is approved for exemption by the Joint Working Group, the usage of this skeleton is optional.
 
