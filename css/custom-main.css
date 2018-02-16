@@ -146,7 +146,7 @@ button.navbar-toggle {
 
 button.gov-button-custom {
     border: none;
-    right: 30px;
+    right: 10px;
     padding-bottom: 15px;
 }
 
@@ -187,7 +187,6 @@ button.gov-button-custom {
     }
     
 }
-
 
 /* remove navigation for all but small screens */
 
@@ -629,3 +628,38 @@ label {
     box-shadow: rgba(0, 0, 0, 0.4) -10px 0 20px inset;
 }
 
+/* HEADER SEARCH - COLLAPSED */
+#header #header-main-row1 .header-search {
+    position: absolute;
+    right: 0px;
+    width: 100%;
+    top: 59px;
+}
+
+#header #header-main-row1 .header-search .header-main-right {
+    margin: 0;
+}
+
+#header #header-main-row1 .header-search .header-main-right .search .search-trigger {
+    margin-top: -32px;
+}
+
+/* HEADER SEARCH - INLINE */
+#header #header-main-row1 .header-search-inline {
+    position: relative;
+    overflow: visible;
+    float: right;
+    width: 40%;
+    margin-right: -15px;
+    margin-top: -55px;
+}
+
+/* Resize page title h1 so it doesn't overlap search bar */
+@media (max-width: 991px) and (min-width: 768px) {
+    #header .bcgov-title h1 {
+        font-size: 25px;
+        margin-left: 0;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+}
