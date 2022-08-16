@@ -1,6 +1,8 @@
 # Gov-2.0-Bootstrap-Skeleton
 An HTML5/CSS3/Bootstrap skeleton to accompany the gov.bc.ca. Developer's Guide.
 
+[![Lifecycle:Retired](https://img.shields.io/badge/Lifecycle-Retired-d45500)](<Redirect-URL>)
+
 ## Governance & Approvals   
 All web properties that are created using the Province of B.C. brand/identity must have [received approval](http://www2.gov.bc.ca/gov/content?id=28CC2BEFA54745EA8927F48F196FA38C) by Government Communications & Public Engagement Headquarters through the Joint Working Group, the official governing body of web properties for the Province.  If the web property is public facing, it is strongly recommended that this approval is sought before development begins as the project may experience delays, and potential shutdown.  
 
